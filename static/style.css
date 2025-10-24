@@ -123,3 +123,11 @@ article .content {
   color: #444;
   text-align: center;
 }
+
+.footer p {
+  margin: 4px 0;
+}
+
+.footer strong {
+  color: #000080;
+}
