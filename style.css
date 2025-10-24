@@ -1,0 +1,125 @@
+/* Global layout */
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  background-color: #ffffff;
+  width: 800px;
+  min-height: 100vh;
+  border: 2px solid #000080;          /* navy border */
+  box-shadow: 4px 4px 0 #808080;      /* old-school offset "shadow" */
+  padding: 16px 24px;
+  margin: 24px 0;
+}
+
+/* Header / site title */
+.site-header {
+  border-bottom: 2px solid #000080;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000080;
+  margin: 0;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #444;
+  font-style: italic;
+}
+
+/* Nav bar - early 2000s style links */
+.navbar {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.navbar a {
+  color: #0000EE;         /* classic link blue */
+  text-decoration: underline;
+  margin-right: 12px;
+}
+.navbar a:hover {
+  color: #551A8B;         /* classic visited purple hover vibe */
+}
+
+/* Content card / module box */
+.box {
+  border: 2px solid #000080;
+  background-color: #fff;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.box-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000080;
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid #000080;
+  padding-bottom: 4px;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+/* Blog list */
+.post-item {
+  margin-bottom: 16px;
+}
+
+.post-item-title a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #555;
+  margin: 4px 0 0 0;
+  font-style: italic;
+}
+
+/* Article page */
+article h1 {
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: #000080;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+article .post-date {
+  margin-bottom: 16px;
+}
+
+article .content {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  border-top: 2px solid #000080;
+  margin-top: 24px;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #444;
+  text-align: center;
+}
