@@ -13,6 +13,6 @@ git push origin main
 cd public
 git add .
 git commit -m "Deploy site"
-git push origin gh-pages
+git push origin deploy
 cd ..
 
