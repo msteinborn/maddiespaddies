@@ -1,19 +1,22 @@
 #!/bin/bash
 set -e
 
+echo "[0/4] Ensuring we're in project root..."
+# optional: uncomment if you want script to always run relative to itself
+# cd "$(dirname "$0")"
+
 ########################################
 # 1. Commit & push source branch (main)
 ########################################
+echo "[1/4] Committing and pushing Hugo source to main..."
 
-echo "[1/3] Committing and pushing source (main branch)..."
-
-# Make sure we're on main in the root repo
+# make sure we're on main in the root repo
 git checkout main
 
-# Stage all changes in the Hugo source (layouts/, content/, static/, etc.)
+# stage everything EXCEPT public/ (public/ should be in .gitignore anyway)
 git add .
 
-# Only commit if there are staged changes
+# commit if there are staged changes
 if ! git diff --cached --quiet; then
     git commit -m "Update site source"
     git push origin main
@@ -23,35 +26,38 @@ fi
 
 
 ########################################
-# 2. Build the site with Hugo
+# 2. Build site with Hugo
 ########################################
-
-echo "[2/3] Building site with Hugo..."
+echo "[2/4] Building static site with Hugo..."
 hugo
 
 
 ########################################
-# 3. Commit & push generated site (deploy branch)
+# 3. Commit & push built site to deploy
 ########################################
-
-echo "[3/3] Committing and pushing built site (deploy branch)..."
+echo "[3/4] Publishing build output to deploy branch..."
 
 cd public
 
-# Ensure we're on the deploy branch in /public
+# make sure we're on the deploy branch
 git checkout -B deploy
 
-# Stage all built files
+# stage everything in public (the generated site)
 git add .
 
-# Only commit if there are staged changes
+# commit if there are staged changes
 if ! git diff --cached --quiet; then
     git commit -m "Publish site"
-    git push origin deploy
 else
-    echo "No published changes to commit."
+    echo "No publish changes to commit."
 fi
+
+# force push to deploy branch (this is what Pages serves)
+git push origin deploy --force
 
 cd ..
 
-echo "✅ Deploy complete."
+########################################
+# 4. Done
+########################################
+echo "[4/4] Deploy complete. Live site should now reflect this build."
