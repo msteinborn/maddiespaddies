@@ -131,3 +131,12 @@ article .content {
 .footer strong {
   color: #000080;
 }
+
+iframe, video {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000080; /* fits your retro theme */
+  box-shadow: 4px 4px 0 #808080;
+}
