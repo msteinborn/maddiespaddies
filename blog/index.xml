@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Matt S. Personal Website</title>
+    <link>https://maddiespaddies.com/blog/</link>
+    <description>Recent content in Blogs on Matt S. Personal Website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maddiespaddies.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>welcome to nonsense</title>
+      <link>https://maddiespaddies.com/blog/launching-my-blog/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://maddiespaddies.com/blog/launching-my-blog/</guid>
+      <description>&lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;&#xA;&lt;p&gt;I decided I needed to get on the cool guy train and start to maintain a blog here; I am not much of a writer and my interests are varied to say the least.&lt;/p&gt;&#xA;&lt;p&gt;I am intending to use this space to capture some thoughts I have regarding a variety of topics such as trends in semiconductors/silicon/chip design, game design, the boston celtics, optimal leveling strategy in TES IV - really anything. I need to be as transparent as possible, while I am passionate about many of these things, these thoughts are largely those of a lay person. This whole thing is mostly an exercise in keeping a somewhat public journal, but hopefully this platform enables to become at least a marginally better writer now that I have some free time on my hands.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
