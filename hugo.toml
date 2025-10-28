@@ -2,3 +2,8 @@ baseURL = 'https://maddiespaddies.com/'
 languageCode = 'en-us'
 title = 'steinburgers 🍔'
 subtitle = "ramblings of a sane man"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
